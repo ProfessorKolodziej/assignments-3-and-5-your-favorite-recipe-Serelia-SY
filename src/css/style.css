@@ -1,11 +1,606 @@
-@media screen and (width >= 320px) {
-	#some-id {
-		color: red;
+* {
+	margin: 0;
+	padding: 0;
+  }
+  a {
+	text-decoration: none;
+  }
+  i {
+	font-style: normal;
+  }
+  .div1080 {
+	width: 1080px;
+	margin: 0 auto;
+  }
+  .w-100 {
+	width: 100%;
+  }
+  .ta-c {
+	text-align: center;
+  }
+  header {
+	background-color: rgba(159, 159, 159, 0.25);
+  }
+  header .div1080 {
+	line-height: 60px;
+	height: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .logo {
+	width: 180px;
+  }
+  header a {
+	font-family: Noto Sans SC;
+	font-size: 20px;
+	color: #000;
+	font-weight: 700;
+	line-height: 28px;
+  }
+  .salad-recipe {
+	margin-top: 50px;
+  }
+  .salad-recipe .div1080 {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+  }
+  .salad-recipe-pic {
+	width: 400px;
+  }
+  .salad-recipe-pic img {
+	border-radius: 50%;
+  }
+  .salad-recipe-content {
+	width: 620px;
+  }
+  .salad-recipe-content h1 {
+	font-family: Leckerli One;
+	font-size: 66px;
+	font-weight: 400;
+	line-height: 79px;
+	color: #357c4b;
+  }
+  .salad-recipe-content h1 i {
+	color: #bdcb47;
+  }
+  .salad-recipe-start {
+	margin-bottom: 20px;
+  }
+  .salad-recipe-start span {
+	color: #f8e21e;
+	font-size: 24px;
+  }
+  .salad-recipe-list {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .salad-recipe-list .item {
+	width: 33.33%;
+  }
+  .salad-recipe-list .item p {
+	font-family: Monomaniac One;
+	font-size: 18px;
+	font-weight: 400;
+	color: #ff8940;
+  }
+  .salad-recipe-bg {
+	margin-top: 50px;
+	background: #d6e652;
+	box-shadow: 0px 4px 4px 0px #000;
+	padding: 16px 10px;
+	border-radius: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  }
+  .salad-recipe-bg img {
+	width: 80px;
+	border-radius: 50%;
+  }
+  .salad-recipe-bg .salad-recipe-text {
+	width: 500px;
+  }
+  .salad-recipe-bg p {
+	font-family: Neucha;
+	font-size: 22px;
+	font-weight: 400;
+	line-height: 24.23px;
+	color: #357c4b;
+	text-align: left;
+  }
+  .salad-recipe-bg p:nth-of-type(2) {
+	text-align: right;
+  }
+  .disclosure {
+	margin-top: 50px;
+	font-family: Neucha;
+	font-size: 24px;
+	font-weight: 400;
+	line-height: 26px;
+	color: #357c4b;
+  }
+  .disclosure a {
+	text-decoration: underline;
+	color: #357c4b;
+  }
+  .salad-recipe-introduce {
+	margin-top: 50px;
+	font-family: Neucha;
+	font-size: 32px;
+	font-weight: 400;
+	line-height: 40px;
+	color: #586a54;
+  }
+  .questions {
+	margin-top: 87px;
+	background: url(../images/fruit.png) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 110px;
+  }
+  .questions::before,
+  .ingredients::before,
+  .instructions::before,
+  .notes::before {
+	content: '';
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	background: #fa8b43;
+  }
+  .title {
+	position: absolute;
+	top: -34px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	background: #fa8b43;
+	box-shadow: 0px 4px 4px 0px #000;
+	line-height: 68px;
+	padding: 0 34px;
+	border-radius: 20px;
+  }
+  .title h2 {
+	font-family: Leckerli One;
+	font-size: 48px;
+	font-weight: 400;
+	color: #fdf8e2;
+  }
+  .questions-list {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  }
+  .questions-list .item {
+	width: 520px;
+	margin-top: 56px;
+	position: relative;
+	z-index: 1;
+  }
+  .questions-list .item h3 {
+	font-family: Leckerli One;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 45.6px;
+	color: #357c4b;
+  }
+  .questions-list .item .item-content {
+	margin-left: 18px;
+	margin-top: 40px;
+	width: 480px;
+	min-height: 230px;
+	padding: 20px;
+	border-radius: 5px;
+	background: #fff;
+	border: 1px solid #586a54;
+	box-sizing: border-box;
+  }
+  .questions-list .item .item-bg {
+	position: absolute;
+	bottom: -32px;
+	left: -20px;
+	z-index: -1;
+	width: 490px;
+	height: 250px;
+	border-radius: 5px;
+	background: rgba(159, 159, 159, 0.25);
+	backdrop-filter: blur(4px);
+  }
+  .questions-list .item:last-of-type .item-bg {
+	height: 350px;
+  }
+  .questions-list .item .item-content p {
+	font-family: Neucha;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 40px;
+	color: #586a54;
+  }
+  .ingredients {
+	position: relative;
+	padding: 0 0 90px;
+  }
+  .ingredients-list {
+	padding-top: 40px;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  }
+  .ingredients-list .item {
+	margin-top: 60px;
+	position: relative;
+	width: 450px;
+  }
+  .ingredients-list .item .ingredient-item {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 225px;
+	background: rgba(255, 255, 255, 0.5);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  }
+  .ingredients-list .item .ingredient-item h3 {
+	font-family: Passion One;
+	font-size: 48px;
+	font-weight: 400;
+	line-height: 52.85px;
+	color: #357c4b;
+	padding: 10px;
+	text-shadow: -1px -1px 0 #fdf8e2, 1px -1px 0 #fdf8e2, -1px 1px 0 #fdf8e2,
+	  1px 1px 0 #fdf8e2;
+  }
+  .ingredients-list .item .ingredient-item a {
+	color: #357c4b;
+	border-bottom: 3px solid #fdf8e2;
+  }
+  .instructions {
+	margin-top: 87px;
+	background: url(../images/fg.png) center center no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-bottom: 110px;
+  }
+  .instructions-list {
+	padding-top: 60px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+  }
+  .instructions-list .item {
+	margin-top: 60px;
+	position: relative;
+	width: 510px;
+	background: #fdf8e2;
+	border: 1px solid #838383;
+	box-shadow: 0px 4px 4px 0px #000;
+  }
+  .instructions-list .item:nth-of-type(3) {
+	width: 100%;
+  }
+  .instructions-list .item .item-content {
+	padding: 20px;
+  }
+  .instructions-list .item img {
+	position: absolute;
+	top: -58px;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 100px;
+	z-index: 1;
+  }
+  .instructions-list .item h3 {
+	font-family: Leckerli One;
+	font-size: 40px;
+	font-weight: 400;
+	line-height: 48px;
+	color: #357c4b;
+  }
+  .instructions-list .item ul li {
+	font-family: Neucha;
+	font-size: 38px;
+	font-weight: 400;
+	line-height: 50px;
+	letter-spacing: 0.05em;
+	color: #586a54;
+	margin: 20px 20px 10px 30px;
+  }
+  .notes {
+	position: relative;
+	padding: 0 0 90px;
+  }
+  .notes .div1080 {
+	padding-top: 82px;
+  }
+  .notes .notes-text {
+	background: #ffda85b2;
+	box-shadow: 0px 4px 4px 0px #000;
+	padding: 20px 30px 20px 60px;
+  }
+  .notes .notes-text li {
+	font-family: Neucha;
+	font-size: 35px;
+	font-weight: 400;
+	line-height: 50px;
+	color: #d76217;
+  }
+  .nutrition {
+	margin-top: 50px;
+  }
+  .nutrition p {
+	margin-top: 30px;
+	font-family: Monomaniac One;
+	font-size: 28px;
+	font-weight: 400;
+	line-height: 40px;
+	letter-spacing: 0.05em;
+	color: #838383;
+  }
+  
+  @media (max-width: 1080px) {
+	.div1080 {
+	  width: 96%;
 	}
-}
-
-@media screen and (width >= 500px) {
-	#some-id {
-		color: red;
+	.salad-recipe,
+	.salad-recipe-bg,
+	.disclosure,
+	.salad-recipe-introduce,
+	.nutrition {
+	  margin-top: 3%;
 	}
-}
+	.salad-recipe-pic {
+	  width: 37%;
+	}
+	.salad-recipe-content {
+	  width: 62%;
+	}
+	.salad-recipe-start {
+	  margin-bottom: 2%;
+	}
+	.salad-recipe-bg .salad-recipe-text {
+	  width: calc(100% - 100px);
+	}
+	.questions,
+	.instructions {
+	  margin-top: 5.7%;
+	  padding-bottom: 6%;
+	}
+	.questions-list .item {
+	  margin-top: 5.6%;
+	  width: 48%;
+	  margin-left: 1%;
+	}
+	.questions-list .item .item-content {
+	  margin-top: 4%;
+	  padding: 2%;
+	  width: 96%;
+	}
+	.questions-list .item .item-bg {
+	  width: 96%;
+	  left: 1%;
+	  bottom: -4%;
+	}
+	.notes .div1080 {
+	  padding-top: 1px;
+	}
+	.ingredients-list .item {
+	  margin-top: 6%;
+	  width: 42%;
+	}
+	.instructions-list .item {
+	  margin-top: 6%;
+	  width: 47%;
+	}
+	.instructions-list .item .item-content {
+	  padding: 2%;
+	}
+	.notes .notes-text {
+	  margin-top: 8.2%;
+	  padding: 2% 3% 2% 6%;
+	}
+	.nutrition p {
+	  margin-top: 3%;
+	}
+	.instructions-list {
+	  padding-top: 6%;
+	}
+  }
+  @media (max-width: 768px) {
+	.questions::before,
+	.ingredients::before,
+	.instructions::before,
+	.notes::before {
+	  height: 0;
+	}
+	header a,
+	.salad-recipe-start span,
+	.disclosure,
+	.salad-recipe-bg p {
+	  font-size: 18px;
+	}
+	.salad-recipe .div1080 {
+	  flex-direction: column;
+	}
+	.salad-recipe-pic {
+	  width: 85%;
+	  margin: 0 auto;
+	}
+	.salad-recipe-content {
+	  width: 100%;
+	}
+	.salad-recipe-content h1 {
+	  font-size: 30px;
+	  line-height: 40px;
+	}
+	.salad-recipe-list .item p {
+	  font-size: 16px;
+	}
+	.instructions-list {
+	  padding-top: 2%;
+	}
+	.salad-recipe-introduce,
+	.questions-list .item h3,
+	.questions-list .item .item-content p,
+	.instructions-list .item h3,
+	.notes .notes-text li,
+	.nutrition p {
+	  font-size: 22px;
+	  line-height: 32px;
+	}
+	.notes .notes-text {
+	  margin-top: 5.2%;
+	}
+	.questions,
+	.instructions {
+	  background: none;
+	}
+	.title {
+	  position: static;
+	  left: 0;
+	  transform: translate(0, 0);
+	  padding: 0 2%;
+	  margin: 0 auto;
+	  line-height: 50px;
+	  width: 60%;
+	}
+	.title.title-ask {
+	  margin-left: -8%;
+	  border-radius: 0 20px 20px 0;
+	  width: 92%;
+	}
+	.title h2 {
+	  font-size: 24px;
+	}
+	.questions-list .item {
+	  width: 99%;
+	}
+	.ingredients {
+	  padding: 0;
+	}
+	.ingredients-list .item {
+	  margin-top: 4%;
+	  width: 48%;
+	}
+	.ingredients-list .item .ingredient-item {
+	  height: 40%;
+	  bottom: 25%;
+	}
+	.ingredients-list .item .ingredient-item h3,
+	.instructions-list .item ul li {
+	  font-size: 20px;
+	  line-height: 24px;
+	}
+	.instructions-list .item {
+	  width: 100%;
+	}
+	.instructions-list .item img {
+	  display: none;
+	}
+  }
+  @media (max-width: 475px) {
+	.logo {
+	  width: 160px;
+	}
+	.salad-recipe-content h1 i {
+	  display: block;
+	}
+	header a,
+	.salad-recipe-start span,
+	.disclosure,
+	.salad-recipe-bg p {
+	  font-size: 14px;
+	}
+	.salad-recipe-list .item p {
+	  font-size: 12px;
+	}
+	.salad-recipe-introduce,
+	.questions-list .item h3,
+	.questions-list .item .item-content p,
+	.instructions-list .item h3,
+	.notes .notes-text li,
+	.nutrition p {
+	  font-size: 18px;
+	  line-height: 25px;
+	}
+	.title h2 {
+	  font-size: 21px;
+	  line-height: 42px;
+	}
+	.ingredients-list .item .ingredient-item h3,
+	.instructions-list .item ul li {
+	  font-size: 16px;
+	  line-height: 18px;
+	}
+	.disclosure {
+	  line-height: 20px;
+	}
+	.disclosure a {
+	  display: block;
+	}
+	.questions-list .item .item-content {
+	  min-height: 160px;
+	  width: 94%;
+	}
+	.questions-list .item .item-bg {
+	  height: 150px !important;
+	  width: 92%;
+	}
+	.instructions-list .item {
+	  margin-top: 8%;
+	}
+  }
+  @media (max-width: 320px) {
+	.div1080 {
+	  width: 86%;
+	}
+	.salad-recipe,
+	.salad-recipe-bg,
+	.disclosure,
+	.salad-recipe-introduce,
+	.nutrition,
+	.ingredients-list,
+	.notes .notes-text,
+	.questions-list .item {
+	  margin-top: 7%;
+	}
+	.ingredients {
+	  padding-top: 4%;
+	}
+	.ingredients-list {
+	  padding-top: 0;
+	}
+	.salad-recipe-start {
+	  margin-bottom: 4%;
+	}
+	.salad-recipe-bg {
+	  padding: 2%;
+	}
+	.salad-recipe-content h1 {
+	  font-size: 24px;
+	  line-height: 40px;
+	}
+	.questions-list .item .item-content {
+	  width: 92%;
+	}
+	.salad-recipe-bg p {
+	  line-height: 18px;
+	}
+	.questions-list .item .item-bg {
+	  bottom: -6%;
+	  height: 160px !important;
+	}
+	.questions-list .item:last-of-type .item-bg {
+	  height: 210px !important;
+	}
+	.notes .notes-text {
+	  padding: 4% 9%;
+	}
+  }
+  
